@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jan 22 18:01:32 2018
+# Process ID: 9744
+# Current directory: D:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge
+# Command line: vivado.exe -mode gui -journal ./top_axi_mst_sbus_bridge_Flow.jou -log ./top_axi_mst_sbus_bridge_Flow.log -source ./HDS_Scripts/top_axi_mst_sbus_bridge_Flow.tcl
+# Log file: D:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge/./top_axi_mst_sbus_bridge_Flow.log
+# Journal file: D:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge\./top_axi_mst_sbus_bridge_Flow.jou
+#-----------------------------------------------------------
+start_gui
+source ./HDS_Scripts/top_axi_mst_sbus_bridge_Flow.tcl
+# lappend ::auto_path "$::env(HDS_HOME)/resources/tcl/tcllib1.4"
+# set ::hdsDebug 0
+# proc ::hdsDebugPuts {msg} {
+#    if {$::hdsDebug} {
+#       puts $msg
+#    }
+# }
+# set normVars {HDS_PROJECT_DIR HDS_TEAM_HOME HDS_HOME XILINX_VIVADO}
+# foreach varName $normVars {
+#    if {[info exists ::env($varName)]} {
+#       set ::env($varName) [file normalize [subst -nobackslash {$::env($varName)}]]
+#    }
+# }
+# puts "## HDS #Running Vivado Project Creation/Update#"
+## HDS #Running Vivado Project Creation/Update#
+# set ::errorCount 0
+# if {[catch {source ./HDS_Scripts/top_axi_mst_sbus_bridge_Create.tcl} errMsg]} {
+#    if {[regexp "(?q)$errMsg" $errorInfo]} {
+#       puts "Error: $errorInfo"
+#    } else {
+#       puts "Error: $errMsg"
+#    }
+#    return
+# }
+Creating project ./top_axi_mst_sbus_bridge.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 836.410 ; gain = 84.000
+## get_filesets
+## get_property DEFAULT_LIB [current_project]
+## current_project
+## current_project
+## current_project
+## current_project
+Project HDL files to add stored in:
+   ./HDS_Scripts/top_axi_mst_sbus_bridge_fileList.tcl
+## list
+## list
+## list
+## join $vivadoCoresExtList "|"
+## get_files -all -quiet
+## join $nonIpFiles \n
+## join $ipFiles \n
+## join $coreIpFiles \n
+### list
+### list
+### list
+# if {$::errorCount == 0} {
+#    puts "Note: \"source ./HDS_Scripts/top_axi_mst_sbus_bridge_Create.tcl\" completed successfully\n"
+# } else {
+#    puts "Error: \"source ./HDS_Scripts/top_axi_mst_sbus_bridge_Create.tcl\" completed with errors\n"
+# }
+Note: "source ./HDS_Scripts/top_axi_mst_sbus_bridge_Create.tcl" completed successfully
+
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  D:/ECM_DCD/username/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECM_DCD/username/ip_repo'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/ECM_DCD/username/ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge'.)
+ipx::package_project -root_dir d:/ecm_dcd/username/ip_repo/axi_mst_sbus_bridge -vendor fh-joanneum.local -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-5107] Inferred bus interface 'user_sbus' of definition 'fh-joanneum.local:user:sbus:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'xfer_ext' of definition 'fh-joanneum.local:user:sig:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M00_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-4747] Not inferring AXIMM interface 'fifo' due to missing slave read-channel signals ARADDR ARVALID ARREADY RVALID RREADY.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-4747] Not inferring AXIMM interface 'sbus' due to missing master read-channel signals ARADDR ARVALID ARREADY RVALID RREADY.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'M00_AXI_ARESETN' as interface 'M00_AXI_ARESETN'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M00_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'reset' as interface 'reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axi'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'M00_AXI_ACLK' as interface 'M00_AXI_ACLK'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M00_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M00_AXI'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4753] Inferred signal 'interrupt' from port 'irq' as interface 'irq'.
+INFO: [IP_Flow 19-4728] Bus Interface 'irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'M00_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'M00_AXI_ARESETN'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+ipx::remove_bus_interface xfer_ext [ipx::current_core]
+set_property name sbus_slv [ipx::get_bus_interfaces user_sbus -of_objects [ipx::current_core]]
+ipx::remove_bus_interface clk [ipx::current_core]
+ipx::remove_bus_interface reset [ipx::current_core]
+ipx::create_abstraction_definition fh-joanneum.local user fifo_read_rtl 1.0
+ipx::create_bus_definition fh-joanneum.local user fifo_read 1.0
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_read_rtl.xml [ipx::current_busabs]
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_read.xml [ipx::current_busdef]
+set_property bus_type_vlnv fh-joanneum.local:user:fifo_read:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::add_bus_abstraction_port fifo_rd [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_rd_enable [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_rd_size [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_rdata [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECM_DCD/username/ip_repo'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/ECM_DCD/username/ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge'.)
+update_ip_catalog -rebuild -repo_path d:/ECM_DCD/username/ip_repo
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/ECM_DCD/username/ip_repo'
+ipx::infer_bus_interface {fifo_rd fifo_rd_enable fifo_rd_size fifo_rdata} fh-joanneum.local:user:fifo_read:1.0 [ipx::current_core]
+set_property name fifo_read [ipx::get_bus_interfaces fifo_read_1 -of_objects [ipx::current_core]]
+ipx::create_abstraction_definition fh-joanneum.local user fifo_write_rtl 1.0
+ipx::create_bus_definition fh-joanneum.local user fifo_write 1.0
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_write_rtl.xml [ipx::current_busabs]
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_write.xml [ipx::current_busdef]
+set_property bus_type_vlnv fh-joanneum.local:user:fifo_write:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::add_bus_abstraction_port fifo_wdata [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_we [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_wr_enable [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_wr_size [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECM_DCD/username/ip_repo'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/ECM_DCD/username/ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge'.)
+update_ip_catalog -rebuild -repo_path d:/ECM_DCD/username/ip_repo
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/ECM_DCD/username/ip_repo'
+ipx::infer_bus_interface {fifo_wdata fifo_we fifo_wr_enable fifo_wr_size} fh-joanneum.local:user:fifo_write:1.0 [ipx::current_core]
+set_property name fifo_write [ipx::get_bus_interfaces fifo_write_1 -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_rd -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_rd_enable -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports sync_i -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports xfer_sync_ext -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_we -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_wr_enable -of_objects [ipx::current_core]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/ECM_DCD/username/ip_repo
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/ECM_DCD/username/ip_repo'
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 18:11:24 2018...

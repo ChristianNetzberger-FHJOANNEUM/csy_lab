@@ -1,0 +1,429 @@
+/*
+ * uart.c
+ *
+ *  Created on: 08.11.2013
+ *      Author: net
+ */
+
+
+/******************************************************************************
+ *
+ *   Advanced Electronic Engineering    FH JOANNEUM Kapfenberg
+ *
+ *
+ *
+ *   Communication Systems LAB
+ *
+ *   November 2013
+ *
+******************************************************************************/
+
+/***************************** Include Files *******************************/
+#include "xparameters.h"
+#include "xuartps.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+#include "xil_printf.h"
+#include "globals.h"
+
+/************************** Constant Definitions **************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define UART0_DEVICE_ID		XPAR_PS7_UART_1_DEVICE_ID
+#define UART0_INT_IRQ_ID		XPAR_XUARTPS_1_INTR
+//#define UART1_DEVICE_ID		XPAR_XUARTPS_1_DEVICE_ID
+//#define UART1_INT_IRQ_ID	XPAR_XUARTPS_1_INTR
+
+
+/************************** Function Prototypes *****************************/
+
+static int UART0_init(XScuGic *IntcInstPtr, XUartPs *UartInstPtr,u16 DeviceId, u16 UartIntrId);
+//static int UART1_init(XScuGic *IntcInstPtr, XUartPs *UartInstPtr,u16 DeviceId, u16 UartIntrId);
+
+static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
+				XUartPs *UartInstancePtr,
+				u16 UartIntrId);
+
+//int UART0_Send(u8 *buffer, int NumBytes);
+int UART0_Receive(u8 *buffer, int NumBytes);
+
+int UART1_Send(u8 *buffer, int NumBytes);
+int UART1_Receive(u8 *buffer, int NumBytes);
+
+//---- UART interrupt Handler------------------
+void UART0_Handler(void *CallBackRef, u32 Event, unsigned int EventData);
+void UART1_Handler(void *CallBackRef, u32 Event, unsigned int EventData);
+
+
+/************************** Variable Definitions ***************************/
+
+XUartPs UartPs0	;		        /* Instance of the UART0 Device */
+XUartPs UartPs1	;		        /* Instance of the UART1 Device */
+XScuGic InterruptController;	/* Instance of the Interrupt Controller */
+
+volatile int TotalReceivedCount;
+volatile int TotalSentCount;
+int TotalErrorCount;
+
+/*
+int UART0_SendPacket(uart_pkt_struct *uart_pkt)
+{
+//	UART0_Send((u8 *)uart_pkt, uart_pkt->length+6);
+	return 0;
+}
+*/
+
+/**************************************************************************/
+/**
+*
+* Function to initialize the UARTs
+*
+* @param	None
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+**************************************************************************/
+
+int UART_initialize(void)
+{
+	int Status;
+
+	/*
+	 * Run the UartPs Interrupt example, specify the the Device ID
+	 */
+	Status = UART0_init(&InterruptController, &UartPs0, UART0_DEVICE_ID, UART0_INT_IRQ_ID);
+// 	Status = UART1_init(&InterruptController, &UartPs1, UART1_DEVICE_ID, UART1_INT_IRQ_ID);
+	xil_printf("\n\rinitialize UARTs... \r\n");
+
+	return XST_SUCCESS;
+}
+
+
+
+int UART0_init(XScuGic *IntcInstPtr, XUartPs *UartInstPtr,
+			u16 DeviceId, u16 UartIntrId)
+{
+	int Status;
+	XUartPs_Config *Config;
+	u32 IntrMask;
+
+	/*
+	 * Initialize the UART driver so that it's ready to use
+	 * Look up the configuration in the config table, then initialize it.
+	 */
+	Config = XUartPs_LookupConfig(DeviceId);
+	if (NULL == Config) {
+		return XST_FAILURE;
+	}
+
+	Status = XUartPs_CfgInitialize(UartInstPtr, Config, Config->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Check hardware build
+	 */
+	Status = XUartPs_SelfTest(UartInstPtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Connect the UART to the interrupt subsystem such that interrupts
+	 * can occur. This function is application specific.
+	 */
+//	Status = SetupInterruptSystem(IntcInstPtr, UartInstPtr, UartIntrId);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+
+	/*
+	 * Setup the handlers for the UART that will be called from the
+	 * interrupt context when data has been sent and received, specify
+	 * a pointer to the UART driver instance as the callback reference
+	 * so the handlers are able to access the instance data
+	 */
+//	XUartPs_SetHandler(UartInstPtr, UART0_Handler, UartInstPtr);
+
+	/*
+	 * Enable the interrupt of the UART so interrupts will occur, setup
+	 * a local loopback so data that is sent will be received.
+	 */
+	IntrMask =
+		XUARTPS_IXR_TOUT | XUARTPS_IXR_PARITY | XUARTPS_IXR_FRAMING |
+		XUARTPS_IXR_OVER | XUARTPS_IXR_TXEMPTY | XUARTPS_IXR_RXFULL |
+		XUARTPS_IXR_RXOVR;
+
+	/**********************************************************************
+	 * In this case,  interrupts are not used !!!!!!!!!!!!!!!!!!!!
+	 *
+	 * so the interrupt mask is not applied
+	 **********************************************************************/
+
+	//XUartPs_SetInterruptMask(UartInstPtr, IntrMask);
+
+	/*
+	 * Set the UART in Normal Mode
+	 */
+	XUartPs_SetOperMode(UartInstPtr, XUARTPS_OPER_MODE_NORMAL);
+
+
+	/*
+	 * Set the receiver timeout. If it is not set, and the last few bytes
+	 * of data do not trigger the over-water or full interrupt, the bytes
+	 * will not be received. By default it is disabled.
+	 *
+	 * The setting of 8 will timeout after 8 x 4 = 32 character times.
+	 * Increase the time out value if baud rate is high, decrease it if
+	 * baud rate is low.
+	 */
+	XUartPs_SetRecvTimeout(UartInstPtr, 8);
+
+
+	return XST_SUCCESS;
+}
+
+int UART1_init(XScuGic *IntcInstPtr, XUartPs *UartInstPtr,
+			u16 DeviceId, u16 UartIntrId)
+{
+	int Status;
+	XUartPs_Config *Config;
+	int Index;
+	u32 IntrMask;
+	int BadByteCount = 0;
+
+	/*
+	 * Initialize the UART driver so that it's ready to use
+	 * Look up the configuration in the config table, then initialize it.
+	 */
+	Config = XUartPs_LookupConfig(DeviceId);
+	if (NULL == Config) {
+		return XST_FAILURE;
+	}
+
+	Status = XUartPs_CfgInitialize(UartInstPtr, Config, Config->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Check hardware build
+	 */
+	Status = XUartPs_SelfTest(UartInstPtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Connect the UART to the interrupt subsystem such that interrupts
+	 * can occur. This function is application specific.
+	 */
+	Status = SetupInterruptSystem(IntcInstPtr, UartInstPtr, UartIntrId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Setup the handlers for the UART that will be called from the
+	 * interrupt context when data has been sent and received, specify
+	 * a pointer to the UART driver instance as the callback reference
+	 * so the handlers are able to access the instance data
+	 */
+
+	XUartPs_SetHandler(UartInstPtr, UART1_Handler, UartInstPtr);
+
+	/*
+	 * Enable the interrupt of the UART so interrupts will occur, setup
+	 * a local loopback so data that is sent will be received.
+	 */
+	IntrMask =
+		XUARTPS_IXR_TOUT | XUARTPS_IXR_PARITY | XUARTPS_IXR_FRAMING |
+		XUARTPS_IXR_OVER | XUARTPS_IXR_TXEMPTY | XUARTPS_IXR_RXFULL |
+		XUARTPS_IXR_RXOVR;
+	XUartPs_SetInterruptMask(UartInstPtr, IntrMask);
+
+	//XUartPs_SetOperMode(UartInstPtr, XUARTPS_OPER_MODE_LOCAL_LOOP);
+	/*
+	 * Set the UART in Normal Mode
+	 */
+	XUartPs_SetOperMode(UartInstPtr, XUARTPS_OPER_MODE_NORMAL);
+
+
+	/*
+	 * Set the receiver timeout. If it is not set, and the last few bytes
+	 * of data do not trigger the over-water or full interrupt, the bytes
+	 * will not be received. By default it is disabled.
+	 *
+	 * The setting of 8 will timeout after 8 x 4 = 32 character times.
+	 * Increase the time out value if baud rate is high, decrease it if
+	 * baud rate is low.
+	 */
+	XUartPs_SetRecvTimeout(UartInstPtr, 28);
+
+
+	/*
+	 * Initialize the send buffer bytes with a pattern and the
+	 * the receive buffer bytes to zero to allow the receive data to be
+	 * verified
+	 */
+
+	return XST_SUCCESS;
+}
+
+int UART0_Send(u8 *buffer, int NumBytes)
+{
+	XUartPs_Send(&UartPs0, buffer, NumBytes);
+    return 0;
+}
+
+int UART0_Receive(u8 *buffer, int NumBytes)
+{
+	return XUartPs_Recv(&UartPs0, buffer, NumBytes);
+
+}
+
+
+
+
+/**************************************************************************/
+/**
+*
+* This function is the handler which performs processing to handle data events
+* from the device.  It is called from an interrupt context. so the amount of
+* processing should be minimal.
+*
+* This handler provides an example of how to handle data for the device and
+* is application specific.
+*
+* @param	CallBackRef contains a callback reference from the driver,
+*		in this case it is the instance pointer for the XUartPs driver.
+* @param	Event contains the specific kind of event that has occurred.
+* @param	EventData contains the number of bytes sent or received for sent
+*		and receive events.
+*
+* @return	None.
+*
+* @note		None.
+*
+***************************************************************************/
+void UART0_Handler(void *CallBackRef, u32 Event, unsigned int EventData)
+{
+	/*
+	 * All of the data has been sent
+	 */
+	if (Event == XUARTPS_EVENT_SENT_DATA) {
+		TotalSentCount = EventData;
+	}
+
+	/*
+	 * All of the data has been received
+	 */
+	if (Event == XUARTPS_EVENT_RECV_DATA) {
+		TotalReceivedCount = EventData;
+	}
+
+	/*
+	 * Data was received, but not the expected number of bytes, a
+	 * timeout just indicates the data stopped for 8 character times
+	 */
+	if (Event == XUARTPS_EVENT_RECV_TOUT) {
+		TotalReceivedCount = EventData;
+	}
+
+	/*
+	 * Data was received with an error, keep the data but determine
+	 * what kind of errors occurred
+	 */
+	if (Event == XUARTPS_EVENT_RECV_ERROR) {
+		TotalReceivedCount = EventData;
+		TotalErrorCount++;
+	}
+}
+
+void UART1_Handler(void *CallBackRef, u32 Event, unsigned int EventData)
+{
+	/*
+	 * All of the data has been sent
+	 */
+	if (Event == XUARTPS_EVENT_SENT_DATA) {
+		TotalSentCount = EventData;
+	}
+
+	/*
+	 * All of the data has been received
+	 */
+	if (Event == XUARTPS_EVENT_RECV_DATA) {
+		TotalReceivedCount = EventData;
+	}
+
+	/*
+	 * Data was received, but not the expected number of bytes, a
+	 * timeout just indicates the data stopped for 8 character times
+	 */
+	if (Event == XUARTPS_EVENT_RECV_TOUT) {
+		TotalReceivedCount = EventData;
+	}
+
+	/*
+	 * Data was received with an error, keep the data but determine
+	 * what kind of errors occurred
+	 */
+	if (Event == XUARTPS_EVENT_RECV_ERROR) {
+		TotalReceivedCount = EventData;
+		TotalErrorCount++;
+	}
+}
+
+
+/*****************************************************************************/
+/**
+*
+* This function sets up the interrupt system so interrupts can occur for the
+* Uart. This function is application-specific. The user should modify this
+* function to fit the application.
+*
+* @param	IntcInstancePtr is a pointer to the instance of the INTC.
+* @param	UartInstancePtr contains a pointer to the instance of the UART
+*		driver which is going to be connected to the interrupt
+*		controller.
+* @param	UartIntrId is the interrupt Id and is typically
+*		XPAR_<UARTPS_instance>_INTR value from xparameters.h.
+*
+* @return	XST_SUCCESS if successful, otherwise XST_FAILURE.
+*
+* @note		None.
+*
+****************************************************************************/
+static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
+				XUartPs *UartInstancePtr,
+				u16 UartIntrId)
+{
+	int Status;
+
+	/*
+	 * Connect a device driver handler that will be called when an
+	 * interrupt for the device occurs, the device driver handler
+	 * performs the specific interrupt processing for the device
+	 */
+	Status = XScuGic_Connect(IntcInstancePtr, UartIntrId,
+				  (Xil_ExceptionHandler) XUartPs_InterruptHandler,
+				  (void *) UartInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Enable the interrupt for the device
+	 */
+	XScuGic_Enable(IntcInstancePtr, UartIntrId);
+
+	return XST_SUCCESS;
+}

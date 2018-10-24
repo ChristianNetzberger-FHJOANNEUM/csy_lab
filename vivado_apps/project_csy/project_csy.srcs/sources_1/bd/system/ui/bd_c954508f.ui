@@ -1,0 +1,45 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port codec_i2s -pg 1 -y -460 -defaultsOSRD
+preplace port DDR -pg 1 -y -100 -defaultsOSRD
+preplace port serial_txd -pg 1 -y -340 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -80 -defaultsOSRD
+preplace port serial_rxd -pg 1 -y -380 -defaultsOSRD
+preplace port codec_i2c -pg 1 -y -480 -defaultsOSRD
+preplace port serial_en -pg 1 -y -360 -defaultsOSRD
+preplace portBus buttons -pg 1 -y -440 -defaultsOSRD
+preplace portBus leds -pg 1 -y -380 -defaultsOSRD
+preplace portBus gpo -pg 1 -y -420 -defaultsOSRD
+preplace portBus sliders -pg 1 -y -360 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -y -170 -defaultsOSRD
+preplace inst csy_core_0 -pg 1 -lvl 1 -y -410 -defaultsOSRD
+preplace inst axi_mst_sbus_bridge_0 -pg 1 -lvl 1 -y -80 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y -10 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y -20 -defaultsOSRD
+preplace netloc axi_mst_sbus_bridge_0_sbus_mst 1 0 2 20 -290 590
+preplace netloc processing_system7_0_DDR 1 2 3 NJ -100 1450J -90 1770J
+preplace netloc csy_core_0_irq_o 1 1 1 610
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 1090J -190 N
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 20J 60 620J -190 1080J -150 1470
+preplace netloc axi_smc_M00_AXI 1 0 5 30J 40 600J -180 NJ -180 1480J -100 1760
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 1100
+preplace netloc csy_core_0_codec_i2c 1 1 4 NJ -480 NJ -480 NJ -480 NJ
+preplace netloc rst_ps7_0_100M_peripheral_reset 1 0 4 30 -280 NJ -280 NJ -280 1440
+preplace netloc csy_core_0_leds 1 1 4 NJ -380 NJ -380 NJ -380 NJ
+preplace netloc csy_core_0_serial_en 1 1 4 NJ -360 NJ -360 NJ -360 N
+preplace netloc serial_rxd_1 1 0 1 N
+preplace netloc csy_core_0_codec_i2s 1 1 4 NJ -460 NJ -460 NJ -460 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 1100J -110 1460J -80 NJ
+preplace netloc csy_core_0_gpo 1 1 4 NJ -420 NJ -420 NJ -420 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 10 50 630 -170 1070 -170 N
+preplace netloc sliders_1 1 0 1 N
+preplace netloc csy_core_0_serial_txd 1 1 4 N -340 NJ -340 NJ -340 NJ
+preplace netloc buttons_1 1 0 1 N
+levelinfo -pg 1 -10 430 850 1270 1620 1830 -top -760 -bot 370
+",
+}
+{
+   da_axi4_cnt: "1",
+   da_ps7_cnt: "1",
+}

@@ -1,0 +1,1 @@
+ -L csy_lib -L work -l transcript.txt -i -t ns -multisource_delay latest +typdelays csy_lib.tb_csy_core(struct)

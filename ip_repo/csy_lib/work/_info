@@ -1,0 +1,803 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dD:/ECM_DCD/username/ip_repo/csy_lib/work
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+VRF2TnA;aPgJi4=j_oJKW73
+04 11 6 work tb_csy_core struct 1
+=5-54ee751a3c3f-5bcf5a9a-5e-45c4
+o-quiet +acc -auto_acc_if_foreign -work csy_lib -L csy_lib -L work
+n@_opt
+OL;O;10.2c;57
+Z1 dD:/ECM_DCD/username/ip_repo/csy_lib/work
+!s110 1540315802
+Ebhv_zybo_tester3
+Z2 w1540314564
+Z3 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z4 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+R1
+Z6 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/bhv_zybo_tester3_bhv.vhd
+Z7 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/bhv_zybo_tester3_bhv.vhd
+l0
+L16
+V_BP37BT2@adje46fOW_z92
+Z8 OL;C;10.2c;57
+31
+Z9 !s110 1540315114
+Z10 !s108 1540315114.638000
+Z11 !s90 -work|csy_lib|-nologo|-93|-f|C:/Users/net/AppData/Local/Temp/Files0|
+Z12 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/top_csy_core_struct.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/bhv_zybo_tester3_bhv.vhd|
+Z13 o-work csy_lib -nologo -93
+Z14 tExplicit 1
+!s100 B774B<:gA?A[^KSYzLfz`1
+!i10b 1
+!i111 0
+Abhv
+R3
+R4
+R5
+DEx4 work 16 bhv_zybo_tester3 0 22 _BP37BT2@adje46fOW_z92
+l82
+L40
+VNfnBol[=P`f1;gSAFW<N^3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+R14
+!s100 Q9IMmY4ZJaUJRGh?Wf`?Z3
+!i10b 1
+!i111 0
+Ebuscmd_b
+Z15 w1540315066
+R3
+R4
+R5
+R1
+Z16 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/buscmd_b_fsm.vhd
+Z17 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/buscmd_b_fsm.vhd
+l0
+L16
+V@:9[jLVj03[dO^<ABoFUT2
+R8
+32
+R9
+Z18 !s108 1540315114.792000
+Z19 !s90 -work|csy_lib|-nologo|-f|C:/Users/net/AppData/Local/Temp/Files1|
+Z20 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/buscmd_b_fsm.vhd|
+Z21 o-work csy_lib -nologo
+R14
+!s100 Sh2PV[4@@BE_8a@zaQPF[0
+!i10b 1
+!i111 0
+Afsm
+DEx4 work 8 buscmd_b 0 22 @:9[jLVj03[dO^<ABoFUT2
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+R3
+R4
+R5
+l113
+L53
+V?6bbZT?NzWTMHQamgPX4D2
+R8
+32
+R9
+R18
+R19
+R20
+R21
+R14
+!s100 6AY`oB=cQKKieQDn_VNba1
+!i10b 1
+!i111 0
+Pbusdef
+R4
+R5
+Z23 w1540313828
+R1
+8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/busdef_pkg.vhd
+FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/busdef_pkg.vhd
+l0
+L12
+V1UXM`n^4dFB`k^46WLR7>1
+R8
+33
+b1
+Z24 !s110 1540314369
+Z25 !s108 1540314369.193000
+Z26 !s90 -work|csy_lib|-nologo|-2008|-f|C:/Users/net/AppData/Local/Temp/Files3|
+Z27 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/busdef_pkg_body.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/busdef_pkg.vhd|
+Z28 o-work csy_lib -nologo -2008
+R14
+!s100 gVk;^o:9bWc2NTkWbY2P:1
+!i10b 1
+!i111 0
+Bbody
+Z29 DPx4 work 6 busdef 0 22 1UXM`n^4dFB`k^46WLR7>1
+R4
+R5
+8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/busdef_pkg_body.vhd
+FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/busdef_pkg_body.vhd
+l0
+L10
+VR6Dl;NDkZkZE]b8Zn7[cO0
+R8
+33
+R24
+R25
+R26
+R27
+R28
+R14
+nbody
+!s100 oh19z?_mFLbNj?DzU]X6F0
+!i10b 1
+!i111 0
+Ecodec_interface
+Z30 w1540375307
+R3
+R4
+R5
+R1
+Z31 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/codec_interface_struct.vhd
+Z32 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/codec_interface_struct.vhd
+l0
+L13
+VKAJcj_PklHSiWajO22m[:2
+R8
+33
+Z33 !s110 1540375312
+Z34 !s108 1540375311.924000
+Z35 !s90 -work|csy_lib|-nologo|-2008|-f|C:/Users/net/AppData/Local/Temp/Files1|
+Z36 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/codec_interface_struct.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2c_config_fsm.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2c_master_fsm.vhd|
+R28
+R14
+!s100 oQ]<G90Ij[3HVC`Dd@MWU0
+!i10b 1
+!i111 0
+Astruct
+DEx7 csy_lib 10 i2s_master 0 22 WbcY9U<O@4f66HL2ABA^C3
+DEx7 csy_lib 10 i2c_master 0 22 =_0HR1651ogSeSY@jUQ]o0
+DEx7 csy_lib 10 i2c_config 0 22 02e`:ba5ZAh?5I:Y@VPGl0
+DEx4 work 15 codec_interface 0 22 KAJcj_PklHSiWajO22m[:2
+R22
+R3
+R4
+R5
+l167
+L63
+Vd<0jE^Hf<11DiaV80mL8Y1
+R8
+33
+R33
+R34
+R35
+R36
+R28
+R14
+!s100 hC?g]<RKd2I9dOdYFQ9=n0
+!i10b 1
+!i111 0
+Ecomp_dds
+Z37 w1540314117
+R22
+R3
+R4
+R5
+R1
+Z38 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_dds_rtl.vhd
+Z39 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_dds_rtl.vhd
+l0
+L15
+V[aJOM>oM2=lCY2K>PzkZ41
+R8
+31
+R24
+Z40 !s108 1540314369.012000
+Z41 !s90 -work|csy_lib|-nologo|-93|-f|C:/Users/net/AppData/Local/Temp/Files2|
+Z42 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_dds_rtl.vhd|
+R13
+R14
+!s100 mPB4M`azkQW9CSXEVXJ7z2
+!i10b 1
+!i111 0
+Artl
+R22
+R3
+R4
+R5
+DEx4 work 8 comp_dds 0 22 [aJOM>oM2=lCY2K>PzkZ41
+l36
+L33
+VZF8ZfO[j`Rbdae:LEUzoA3
+R8
+31
+R24
+R40
+R41
+R42
+R13
+R14
+!s100 FgV=A73eQaI@6^T1QC:P63
+!i10b 1
+!i111 0
+Ecomp_delay_bit
+Z43 w1540326623
+R3
+R4
+R5
+R1
+Z44 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_delay_rtl1.vhd
+Z45 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_delay_rtl1.vhd
+l0
+L14
+VEiVk5z2mTJI8PY2J3B;PA1
+R8
+31
+Z46 !s110 1540329025
+Z47 !s108 1540329025.360000
+R11
+Z48 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/top_csy_core_struct.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_pulsetrain_rtl.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_delay_rtl1.vhd|
+R13
+R14
+!s100 f5icnF5d9CmENP3iO[XP13
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R5
+DEx4 work 14 comp_delay_bit 0 22 EiVk5z2mTJI8PY2J3B;PA1
+l32
+L30
+V?m@8cX3CObl:o`A>BH37Q0
+R8
+31
+R46
+R47
+R11
+R48
+R13
+R14
+!s100 @A>mFTkeLgR4lUiM2_lD@1
+!i10b 1
+!i111 0
+Ecomp_oneshot
+Z49 w1540374579
+R22
+R3
+R4
+R5
+R1
+Z50 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_oneshot_rtl.vhd
+Z51 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_oneshot_rtl.vhd
+l0
+L15
+VBA6>S0VzBIKADNLo9Ukm11
+R8
+31
+Z52 !s110 1540375036
+Z53 !s108 1540375036.429000
+R11
+Z54 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/top_csy_core_struct.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_oneshot_rtl.vhd|
+R13
+R14
+!s100 eAg08@CigG0BI:kz6YnYk2
+!i10b 1
+!i111 0
+Artl
+R22
+R3
+R4
+R5
+DEx4 work 12 comp_oneshot 0 22 BA6>S0VzBIKADNLo9Ukm11
+l36
+L33
+V9CSBPG?UL?>fW[T21CAXU1
+R8
+31
+R52
+R53
+R11
+R54
+R13
+R14
+!s100 jnR7[2gn48BLAG?ig:ibP3
+!i10b 1
+!i111 0
+Ecomp_pulsetrain
+Z55 w1540327080
+R22
+R3
+R4
+R5
+R1
+Z56 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_pulsetrain_rtl.vhd
+Z57 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_pulsetrain_rtl.vhd
+l0
+L15
+VWda8<9PcA96YEaoaPZELj2
+R8
+31
+R46
+R47
+R11
+R48
+R13
+R14
+!s100 ?kS99JR3g[fKohMhhV=aM1
+!i10b 1
+!i111 0
+Artl
+R22
+R3
+R4
+R5
+DEx4 work 15 comp_pulsetrain 0 22 Wda8<9PcA96YEaoaPZELj2
+l43
+L39
+VF0odK5F1ghOnXj<M]Y9341
+R8
+31
+R46
+R47
+R11
+R48
+R13
+R14
+!s100 F^?<?_TGnGBRK0UHzLE9;2
+!i10b 1
+!i111 0
+Ecomp_signal_synchr
+Z58 w1540312927
+R22
+R3
+R4
+R5
+R1
+Z59 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_signal_debounce_rtl.vhd
+Z60 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_signal_debounce_rtl.vhd
+l0
+L15
+VVjK1DeC_nzf><JhSFggc^3
+R8
+33
+Z61 !s110 1540314368
+Z62 !s108 1540314368.845000
+R35
+Z63 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/comp_signal_debounce_rtl.vhd|
+R28
+R14
+!s100 @nzjFgWESU48EIBi]J]=d2
+!i10b 1
+!i111 0
+Artl
+R22
+R3
+R4
+R5
+DEx4 work 18 comp_signal_synchr 0 22 VjK1DeC_nzf><JhSFggc^3
+l47
+L40
+VQ`9W4Ol3@<W?ZK;Vai9?Z2
+R8
+33
+R61
+R62
+R35
+R63
+R28
+R14
+!s100 kV6:>5[El8jV<dFoWaj:80
+!i10b 1
+!i111 0
+Ei2c_config
+Z64 w1540375306
+R22
+R3
+R4
+R5
+R1
+Z65 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2c_config_fsm.vhd
+Z66 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2c_config_fsm.vhd
+l0
+L16
+V02e`:ba5ZAh?5I:Y@VPGl0
+R8
+33
+Z67 !s110 1540375311
+R34
+R35
+R36
+R28
+R14
+!s100 d@Rk0T=NLFG]ZdQR5BDb:3
+!i10b 1
+!i111 0
+Afsm
+DEx4 work 10 i2c_config 0 22 02e`:ba5ZAh?5I:Y@VPGl0
+R22
+R3
+R4
+R5
+l104
+L53
+VG88=77S<;eIjFYN9P4]9T2
+R8
+33
+R67
+R34
+R35
+R36
+R28
+R14
+!s100 _Xb6Cm5Jb4Aj4]N@^bi9z3
+!i10b 1
+!i111 0
+Ei2c_master
+R64
+R22
+R3
+R4
+R5
+R1
+Z68 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2c_master_fsm.vhd
+Z69 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2c_master_fsm.vhd
+l0
+L16
+V=_0HR1651ogSeSY@jUQ]o0
+R8
+33
+R67
+R34
+R35
+R36
+R28
+R14
+!s100 QUBTdbkd_Bgi_NJVS8zCO1
+!i10b 1
+!i111 0
+Afsm
+DEx4 work 10 i2c_master 0 22 =_0HR1651ogSeSY@jUQ]o0
+R22
+R3
+R4
+R5
+l119
+L57
+V0]lO22Zkza@Ee2jTS;7g00
+R8
+33
+R67
+R34
+R35
+R36
+R28
+R14
+!s100 eJzE;6K1T:>E1n=nNeW;W3
+!i10b 1
+!i111 0
+Ei2s_master
+R64
+R3
+R4
+R5
+R1
+Z70 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2s_master_fsm.vhd
+Z71 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2s_master_fsm.vhd
+l0
+L15
+VWbcY9U<O@4f66HL2ABA^C3
+R8
+31
+R67
+Z72 !s108 1540375311.759000
+R11
+Z73 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/i2s_master_fsm.vhd|
+R13
+R14
+!s100 XQKl3fB5;nCcE13`<h1dE3
+!i10b 1
+!i111 0
+Afsm
+DEx4 work 10 i2s_master 0 22 WbcY9U<O@4f66HL2ABA^C3
+R22
+R3
+R4
+R5
+l74
+L51
+VigC3OSPDGSBJ<l86j1Z5G1
+R8
+31
+R67
+R72
+R11
+R73
+R13
+R14
+!s100 >dGGl65klChSN<U^dC[Jn0
+!i10b 1
+!i111 0
+Elfsr
+Z74 w1540317852
+Z75 DPx4 ieee 16 std_logic_signed 0 22 8FY=586_D?ni<6VI>V>_P1
+R3
+R4
+R5
+R1
+Z76 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/awgn_lutaddr_rtl.vhd
+Z77 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/awgn_lutaddr_rtl.vhd
+l0
+L15
+Vi<eKfaSB:]a97fDFlg<UB0
+R8
+31
+Z78 !s110 1540317855
+Z79 !s108 1540317855.522000
+R11
+Z80 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/awgn_lutaddr_rtl.vhd|
+R13
+R14
+!s100 [@@bh^Q7`ShXX5YgjB8TA1
+!i10b 1
+!i111 0
+Artl
+R75
+R3
+R4
+R5
+DEx4 work 4 lfsr 0 22 i<eKfaSB:]a97fDFlg<UB0
+l70
+L32
+VTnMM@bzJ;<KBUnK0TLH1P2
+R8
+31
+R78
+R79
+R11
+R80
+R13
+R14
+!s100 _?`8fG8C_j@U@V65c5DjZ1
+!i10b 1
+!i111 0
+Eregister_array_resetval
+R58
+R29
+R22
+R3
+R4
+R5
+R1
+Z81 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/register_array_resetval_rtl.vhd
+Z82 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/register_array_resetval_rtl.vhd
+l0
+L21
+V`cFaz9BdSN9alHG1I=^MJ3
+R8
+31
+R24
+Z83 !s108 1540314369.331000
+Z84 !s90 -work|csy_lib|-nologo|-93|-f|C:/Users/net/AppData/Local/Temp/Files4|
+Z85 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/top_csy_core_struct.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/register_array_resetval_rtl.vhd|
+R13
+R14
+!s100 m;[48@[CHC4nzd]P<6KJ31
+!i10b 1
+!i111 0
+Artl
+R29
+R22
+R3
+R4
+R5
+DEx4 work 23 register_array_resetval 0 22 `cFaz9BdSN9alHG1I=^MJ3
+l63
+L47
+VV2TACDgRbdU7cGjEo]e<;1
+R8
+31
+R24
+R83
+R84
+R85
+R13
+R14
+!s100 M@R]:Z:Ng?gSP13NmK`Kb3
+!i10b 1
+!i111 0
+Esbus_termination
+Z86 w1540314806
+R29
+R3
+R4
+R5
+R1
+Z87 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/sbus_termination_rtl.vhd
+Z88 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/sbus_termination_rtl.vhd
+l0
+L16
+VAH7?lYond6YD5R<L8Q[gF3
+R8
+31
+Z89 !s110 1540315115
+Z90 !s108 1540315114.960000
+R41
+Z91 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/tb_csy_core_struct.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/to_sbus_rtl.vhd|D:/ECM_DCD/username/ip_repo/csy_lib/hdl/sbus_termination_rtl.vhd|
+R13
+R14
+!s100 QSQi:A_`zeRWN;K=S?QK31
+!i10b 1
+!i111 0
+Artl
+R29
+R3
+R4
+R5
+DEx4 work 16 sbus_termination 0 22 AH7?lYond6YD5R<L8Q[gF3
+l28
+L27
+VnC=jYQS>JKT>L3eg4TjC:1
+R8
+31
+R89
+R90
+R41
+R91
+R13
+R14
+!s100 0DJkc6z^R4f4_MAREBN9z3
+!i10b 1
+!i111 0
+Etb_csy_core
+Z92 w1540315284
+R3
+R4
+R5
+R1
+Z93 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/tb_csy_core_struct.vhd
+Z94 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/tb_csy_core_struct.vhd
+l0
+L13
+VSDE0G:^gZzW=PbKEf8ccI2
+R8
+31
+Z95 !s110 1540315288
+Z96 !s108 1540315288.256000
+R11
+Z97 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/tb_csy_core_struct.vhd|
+R13
+R14
+!s100 Noh73EEg1S@a1g=8kD5j40
+!i10b 1
+!i111 0
+Astruct
+DEx7 csy_lib 12 top_csy_core 0 22 X9:P;@ZmoG?>B?]kW:5H42
+DEx7 csy_lib 7 to_sbus 0 22 Hao438hKkK^JW[eU<^gg<0
+DEx7 csy_lib 16 sbus_termination 0 22 AH7?lYond6YD5R<L8Q[gF3
+DEx7 csy_lib 8 buscmd_b 0 22 @:9[jLVj03[dO^<ABoFUT2
+DEx7 csy_lib 16 bhv_zybo_tester3 0 22 _BP37BT2@adje46fOW_z92
+DEx4 work 11 tb_csy_core 0 22 SDE0G:^gZzW=PbKEf8ccI2
+R29
+R3
+R4
+R5
+l158
+L35
+VmRa;NL@moJEG:4mBLb;HE0
+R8
+31
+R95
+R96
+R11
+R97
+R13
+R14
+!s100 :Y63l@C?kh16SPnKMMKSH2
+!i10b 1
+!i111 0
+Eto_sbus
+R86
+R29
+R3
+R4
+R5
+R1
+Z98 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/to_sbus_rtl.vhd
+Z99 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/to_sbus_rtl.vhd
+l0
+L16
+VHao438hKkK^JW[eU<^gg<0
+R8
+31
+R89
+R90
+R41
+R91
+R13
+R14
+!s100 IYLYMWnV<305YOjelXLl30
+!i10b 1
+!i111 0
+Artl
+R29
+R3
+R4
+R5
+DEx4 work 7 to_sbus 0 22 Hao438hKkK^JW[eU<^gg<0
+l34
+L33
+Vh_fR0<3g[iL1eo?nShO>g2
+R8
+31
+R89
+R90
+R41
+R91
+R13
+R14
+!s100 IYm@;Ai6eCAQoB<ln<l<50
+!i10b 1
+!i111 0
+Etop_csy_core
+Z100 w1540401550
+R3
+R4
+R5
+R1
+Z101 8D:/ECM_DCD/username/ip_repo/csy_lib/hdl/top_csy_core_struct.vhd
+Z102 FD:/ECM_DCD/username/ip_repo/csy_lib/hdl/top_csy_core_struct.vhd
+l0
+L13
+VV1>3WYDJV?P`aZNUZLClo0
+!s100 ^G]L?EhonPz7P@NmVd^D?2
+R8
+31
+Z103 !s110 1540401554
+!i10b 1
+Z104 !s108 1540401554.540000
+R11
+Z105 !s107 D:/ECM_DCD/username/ip_repo/csy_lib/hdl/top_csy_core_struct.vhd|
+!i111 0
+R13
+R14
+Astruct
+Z106 DEx7 csy_lib 23 register_array_resetval 0 22 `cFaz9BdSN9alHG1I=^MJ3
+R75
+Z107 DEx7 csy_lib 4 lfsr 0 22 i<eKfaSB:]a97fDFlg<UB0
+Z108 DEx7 csy_lib 18 comp_signal_synchr 0 22 VjK1DeC_nzf><JhSFggc^3
+Z109 DEx7 csy_lib 12 comp_oneshot 0 22 BA6>S0VzBIKADNLo9Ukm11
+Z110 DEx7 csy_lib 14 comp_delay_bit 0 22 EiVk5z2mTJI8PY2J3B;PA1
+R22
+Z111 DEx7 csy_lib 8 comp_dds 0 22 [aJOM>oM2=lCY2K>PzkZ41
+Z112 DEx7 csy_lib 15 codec_interface 0 22 KAJcj_PklHSiWajO22m[:2
+Z113 DEx4 work 12 top_csy_core 0 22 V1>3WYDJV?P`aZNUZLClo0
+R29
+R3
+R4
+R5
+l308
+L80
+VR6cALOeA<Em5HOZadX5em1
+!s100 1g4;W4deg=fQU_AAO6l5;1
+R8
+31
+R103
+!i10b 1
+R104
+R11
+R105
+!i111 0
+R13
+R14

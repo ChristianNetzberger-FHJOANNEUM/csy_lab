@@ -1,0 +1,345 @@
+DESIGN buscmd_b
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 13,0 16 1 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 51,0 22 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 71,0 23 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 66,0 24 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 785,0 25 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 629,0 26 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 76,0 27 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 111,0 28 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 245,0 29 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 731,0 30 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 887,0 31 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 1,0 34 0 
+DESIGN buscmd_b
+VIEW symbol.sb
+GRAPHIC 1,0 35 0 
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 27,0 47 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 51
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 3,0 55 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 95
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 115 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 116
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 118 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 119
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 56,0 120 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 66,0 121 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 123
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 460,0 128 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 130
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 134 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 391,0 135 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 413,0 136 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 414,0 137 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 138
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 141 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 142
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 145 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 146
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 148 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 149
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 460,0 158 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 161
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 162 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 39,0 163 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 391,0 164 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 178,0 165 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 227,0 166 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 195,0 167 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 168
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 310,0 169 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 170
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 195,0 171 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 305,0 172 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 391,0 173 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 174
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 195,0 175 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 176
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 310,0 177 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 338,0 178 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 391,0 179 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 180
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 310,0 181 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 182
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 391,0 183 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 413,0 184 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 178,0 185 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 186
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 391,0 187 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 188
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 89,0 189 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 191
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 193 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 194
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 196 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 197
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 26,0 204 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 206
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 460,0 207 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 209
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 213 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 195,0 214 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 210,0 215 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 310,0 216 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 325,0 217 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 218
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 220 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 221
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 2,0 222 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 223
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+GRAPHIC 18,0 225 0
+LIBRARY csy_lib
+DESIGN buscmd_b
+VIEW fsm.sm
+NO_GRAPHIC 284

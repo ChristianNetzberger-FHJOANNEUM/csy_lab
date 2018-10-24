@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\FSBL\Debug\FSBL.elf
+	D:\ECM_DCD\username\apps\project_csy\project_csy.runs\impl_1\system_wrapper.bit
+	D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\Debug\console.elf
+}

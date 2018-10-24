@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Oct 23 23:17:38 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="cbd9150a3e4647dca997fd65e22b1409" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AutoInferInterfaceHandler" value="4" type="JavaHandler"/>
+<property name="CloseProject" value="2" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="2" type="JavaHandler"/>
+<property name="IPPackagerWizardHandler" value="2" type="JavaHandler"/>
+<property name="ToolsSettings" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="AddRepositoryInfoDialog_OK" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="16" type="GuiResourceData"/>
+<property name="EditParameterDialog_DEFAULT_VALUE" value="1" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="7" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="2" type="GuiResourceData"/>
+<property name="IdentificationContentPanel_DESCRIPTION" value="2" type="GuiResourceData"/>
+<property name="IdentificationContentPanel_DISPLAY_NAME" value="2" type="GuiResourceData"/>
+<property name="IdentificationContentPanel_NAME" value="1" type="GuiResourceData"/>
+<property name="InterfaceConfigurationPanel_NAME" value="7" type="GuiResourceData"/>
+<property name="InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE" value="8" type="GuiResourceData"/>
+<property name="MainMenuMgr_EDIT" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="6" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_FILE" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_REPORT" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_TOOLS" value="4" type="GuiResourceData"/>
+<property name="NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_CLOSE_PROJECT" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_IP_PACKAGER_WIZARD" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_PACKAGER_AUTO_INFER_INTERFACE" value="4" type="GuiResourceData"/>
+<property name="PackagerStepsPanel_PACKAGER_STEPS_LIST" value="5" type="GuiResourceData"/>
+<property name="ParameterFacetTable_PARAMETER_FACET_TABLE" value="8" type="GuiResourceData"/>
+<property name="PortAndInterfaceContentPanel_COLLAPSE_ALL" value="7" type="GuiResourceData"/>
+<property name="PortAndInterfaceFacetTable_AUTO_INFER_SINGLE_BIT_INTERFACE" value="2" type="GuiResourceData"/>
+<property name="PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE" value="97" type="GuiResourceData"/>
+<property name="PortAndInterfaceFacetTable_REMOVE_INTERFACE" value="5" type="GuiResourceData"/>
+<property name="ReviewContentPanel_PACKAGE_IP" value="1" type="GuiResourceData"/>
+<property name="ReviewContentPanel_RE_PACKAGE_IP" value="1" type="GuiResourceData"/>
+<property name="SettingsDialog_PROJECT_TREE" value="4" type="GuiResourceData"/>
+<property name="SettingsProjectIPRepositoryPage_ADD_REPOSITORY" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="119" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="81" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

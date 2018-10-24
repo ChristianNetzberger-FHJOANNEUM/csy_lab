@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jan 22 18:01:32 2018
+# Process ID: 9744
+# Current directory: D:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge
+# Command line: vivado.exe -mode gui -journal ./top_axi_mst_sbus_bridge_Flow.jou -log ./top_axi_mst_sbus_bridge_Flow.log -source ./HDS_Scripts/top_axi_mst_sbus_bridge_Flow.tcl
+# Log file: D:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge/./top_axi_mst_sbus_bridge_Flow.log
+# Journal file: D:/ECM_DCD/username/ip_repo/axi_mst_sbus_bridge/vivado/vivado/top_axi_mst_sbus_bridge\./top_axi_mst_sbus_bridge_Flow.jou
+#-----------------------------------------------------------
+start_gui
+source ./HDS_Scripts/top_axi_mst_sbus_bridge_Flow.tcl
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  D:/ECM_DCD/username/ip_repo [current_project]
+update_ip_catalog
+ipx::package_project -root_dir d:/ecm_dcd/username/ip_repo/axi_mst_sbus_bridge -vendor fh-joanneum.local -library user -taxonomy /UserIP
+ipx::remove_bus_interface xfer_ext [ipx::current_core]
+set_property name sbus_slv [ipx::get_bus_interfaces user_sbus -of_objects [ipx::current_core]]
+ipx::remove_bus_interface clk [ipx::current_core]
+ipx::remove_bus_interface reset [ipx::current_core]
+ipx::create_abstraction_definition fh-joanneum.local user fifo_read_rtl 1.0
+ipx::create_bus_definition fh-joanneum.local user fifo_read 1.0
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_read_rtl.xml [ipx::current_busabs]
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_read.xml [ipx::current_busdef]
+set_property bus_type_vlnv fh-joanneum.local:user:fifo_read:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::add_bus_abstraction_port fifo_rd [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_rd_enable [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_rd_size [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_rdata [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild -repo_path d:/ECM_DCD/username/ip_repo
+ipx::infer_bus_interface {fifo_rd fifo_rd_enable fifo_rd_size fifo_rdata} fh-joanneum.local:user:fifo_read:1.0 [ipx::current_core]
+set_property name fifo_read [ipx::get_bus_interfaces fifo_read_1 -of_objects [ipx::current_core]]
+ipx::create_abstraction_definition fh-joanneum.local user fifo_write_rtl 1.0
+ipx::create_bus_definition fh-joanneum.local user fifo_write 1.0
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_write_rtl.xml [ipx::current_busabs]
+set_property xml_file_name D:/ECM_DCD/username/ip_repo/Interfaces/fifo_write.xml [ipx::current_busdef]
+set_property bus_type_vlnv fh-joanneum.local:user:fifo_write:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::add_bus_abstraction_port fifo_wdata [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_we [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_wr_enable [ipx::current_busabs]
+ipx::add_bus_abstraction_port fifo_wr_size [ipx::current_busabs]
+ipx::save_bus_definition [ipx::current_busdef]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild -repo_path d:/ECM_DCD/username/ip_repo
+ipx::infer_bus_interface {fifo_wdata fifo_we fifo_wr_enable fifo_wr_size} fh-joanneum.local:user:fifo_write:1.0 [ipx::current_core]
+set_property name fifo_write [ipx::get_bus_interfaces fifo_write_1 -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_rd -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_rd_enable -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports sync_i -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports xfer_sync_ext -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_we -of_objects [ipx::current_core]]
+set_property driver_value 0 [ipx::get_ports fifo_wr_enable -of_objects [ipx::current_core]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/ECM_DCD/username/ip_repo

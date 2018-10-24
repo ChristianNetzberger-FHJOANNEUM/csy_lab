@@ -1,0 +1,44 @@
+20:28:10 INFO  : Registering command handlers for SDK TCF services
+20:28:11 INFO  : Launching XSCT server: xsct.bat -interactive D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\temp_xsdb_launch_script.tcl
+20:28:14 INFO  : XSCT server has started successfully.
+20:28:14 INFO  : Successfully done setting XSCT server connection channel  
+20:28:20 INFO  : Successfully done setting SDK workspace  
+20:28:20 INFO  : Processing command line option -hwspec D:/ECM_DCD/username/apps/project_csy/project_csy.sdk/system_wrapper.hdf.
+21:18:19 INFO  : Refreshed build settings on project console
+21:28:20 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin
+21:28:20 INFO  : Creating new bif file D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\console.bif
+21:28:21 INFO  : Bootgen command execution is done.
+23:29:55 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1540330164344,  Project:1540319169891
+23:29:55 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/ECM_DCD/username/apps/project_csy/project_csy.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:29:57 INFO  : Copied contents of D:/ECM_DCD/username/apps/project_csy/project_csy.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+23:30:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:30:05 INFO  : 
+23:30:07 INFO  : 
+23:30:08 INFO  : Updating hardware inferred compiler options for FSBL.
+23:30:09 INFO  : Updating hardware inferred compiler options for console.
+23:30:09 INFO  : Clearing existing target manager status.
+23:30:11 INFO  : Closing and re-opening the MSS file of ther project console_bsp
+23:30:12 INFO  : Closing and re-opening the MSS file of ther project console_bsp
+23:30:12 INFO  : Closing and re-opening the MSS file of ther project FSBL_bsp
+23:30:12 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:30:17 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:30:44 INFO  : Refreshed build settings on project console
+23:33:48 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+23:33:49 INFO  : Bootgen command execution is done.
+23:36:39 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+23:36:40 INFO  : Bootgen command execution is done.
+08:43:02 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+08:43:03 INFO  : Bootgen command execution is done.
+13:23:42 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+13:23:43 INFO  : Bootgen command execution is done.
+16:22:50 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+16:22:52 INFO  : Bootgen command execution is done.
+16:48:46 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+16:48:48 INFO  : Bootgen command execution is done.
+17:02:40 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+17:02:42 INFO  : Bootgen command execution is done.
+18:30:04 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+18:30:05 INFO  : Bootgen command execution is done.
+19:33:42 INFO  : Invoking Bootgen: bootgen -image console.bif -arch zynq -o D:\ECM_DCD\username\apps\project_csy\project_csy.sdk\console\bootimage\BOOT.bin -w on
+19:33:44 INFO  : Bootgen command execution is done.

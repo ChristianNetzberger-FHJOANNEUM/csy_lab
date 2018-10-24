@@ -1,0 +1,1123 @@
+DESIGN i2c_master
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 13,0 16 1 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 51,0 22 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 61,0 23 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 71,0 24 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 86,0 25 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 91,0 26 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 96,0 27 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 56,0 28 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 66,0 29 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 76,0 30 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 237,0 31 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 81,0 32 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 439,0 33 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 1,0 36 0 
+DESIGN i2c_master
+VIEW symbol.sb
+GRAPHIC 1,0 37 0 
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 33,0 49 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 55
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 6,0 59 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 88
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 121 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 122
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 124 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 125
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 62,0 126 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 72,0 127 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 129
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 136 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 45,0 137 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 60,0 138 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 232,0 139 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 233,0 140 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1063,0 141 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1064,0 142 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 143
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 237,0 144 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 252,0 145 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 305,0 146 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 354,0 147 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 355,0 148 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 149
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 386,0 150 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 469,0 151 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 470,0 152 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 153
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 430,0 154 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 555,0 155 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 495,0 156 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 496,0 157 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 158
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 560,0 159 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 599,0 160 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 600,0 161 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 162
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 787,0 163 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1013,0 164 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1014,0 165 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 166
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 804,0 167 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1003,0 168 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1004,0 169 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 170
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 872,0 171 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 887,0 172 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 889,0 173 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 993,0 174 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 994,0 175 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 176
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 906,0 177 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1043,0 178 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1044,0 179 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 180
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 929,0 181 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1053,0 182 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1073,0 183 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1074,0 184 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 185
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 188 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 189
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 191 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 192
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 194 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 195
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 203 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 45,0 204 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 232,0 205 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 210,0 206 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1063,0 207 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 770,0 208 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 209
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 45,0 210 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 211
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 210,0 212 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 327,0 213 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 305,0 214 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 215
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 210,0 216 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 217
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 237,0 218 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 45,0 219 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 305,0 220 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 354,0 221 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 500,0 222 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 223
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 305,0 224 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 225
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 332,0 226 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 381,0 227 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 359,0 228 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 229
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 332,0 230 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 231
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 359,0 232 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 408,0 233 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 386,0 234 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 235
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 359,0 236 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 237
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 386,0 238 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 469,0 239 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 430,0 240 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 241
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 386,0 242 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 243
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 430,0 244 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 555,0 245 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 560,0 246 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 495,0 247 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 332,0 248 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 249
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 430,0 250 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 251
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 500,0 252 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 539,0 253 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 332,0 254 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 255
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 500,0 256 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 257
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 560,0 258 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 599,0 259 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 577,0 260 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 261
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 560,0 262 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 263
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 577,0 264 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 615,0 265 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 620,0 266 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 267
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 577,0 268 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 269
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 620,0 270 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 642,0 271 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 45,0 272 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 273
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 620,0 274 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 275
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 770,0 276 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 983,0 277 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 787,0 278 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 279
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 770,0 280 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 281
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 787,0 282 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1013,0 283 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 821,0 284 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 285
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 787,0 286 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 287
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 804,0 288 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1003,0 289 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 838,0 290 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 291
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 804,0 292 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 293
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 821,0 294 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 963,0 295 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 855,0 296 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 297
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 821,0 298 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 299
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 838,0 300 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1023,0 301 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 872,0 302 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 303
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 838,0 304 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 305
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 855,0 306 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 973,0 307 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 889,0 308 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 309
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 855,0 310 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 311
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 872,0 312 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1033,0 313 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 45,0 314 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 315
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 872,0 316 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 317
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 889,0 318 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 993,0 319 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 906,0 320 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 321
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 889,0 322 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 323
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 906,0 324 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1043,0 325 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 929,0 326 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 327
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 906,0 328 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 329
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 929,0 330 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1053,0 331 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 804,0 332 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1073,0 333 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 855,0 334 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 335
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 929,0 336 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 337
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 95,0 338 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 340
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 341 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 342
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 344 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 345
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 32,0 352 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 353
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 32,0 354 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 356
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 358 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 45,0 359 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 60,0 360 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 210,0 362 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 225,0 363 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 237,0 364 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 252,0 365 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 305,0 367 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 320,0 368 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 332,0 370 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 347,0 371 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 359,0 373 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 374,0 374 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 386,0 376 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 401,0 377 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 430,0 379 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 445,0 380 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 500,0 382 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 515,0 383 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 560,0 385 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 575,0 386 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 577,0 388 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 592,0 389 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 620,0 391 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 635,0 392 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 642,0 395 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 643,0 396 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 397
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 770,0 398 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 785,0 399 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 787,0 400 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 802,0 401 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 804,0 403 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 819,0 404 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 821,0 406 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 836,0 407 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 838,0 409 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 853,0 410 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 855,0 412 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 870,0 413 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 872,0 415 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 887,0 416 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1033,0 419 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 1034,0 420 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 421
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 889,0 422 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 904,0 423 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 906,0 425 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 921,0 426 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 929,0 430 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 944,0 431 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 436
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 2,0 438 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 440
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+GRAPHIC 24,0 442 0
+LIBRARY csy_lib
+DESIGN i2c_master
+VIEW fsm.sm
+NO_GRAPHIC 482

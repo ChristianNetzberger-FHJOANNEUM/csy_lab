@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Oct 23 23:12:33 2018
+# Process ID: 12932
+# Current directory: D:/ECM_DCD/username/ip_repo/csy_lib/vivado/top_csy_core
+# Command line: vivado.exe -mode gui -journal ./top_csy_core_Flow.jou -log ./top_csy_core_Flow.log -source ./HDS_Scripts/top_csy_core_Flow.tcl
+# Log file: D:/ECM_DCD/username/ip_repo/csy_lib/vivado/top_csy_core/./top_csy_core_Flow.log
+# Journal file: D:/ECM_DCD/username/ip_repo/csy_lib/vivado/top_csy_core\./top_csy_core_Flow.jou
+#-----------------------------------------------------------
+start_gui
+source ./HDS_Scripts/top_csy_core_Flow.tcl
+# lappend ::auto_path "$::env(HDS_HOME)/resources/tcl/tcllib1.4"
+# set ::hdsDebug 0
+# proc ::hdsDebugPuts {msg} {
+#    if {$::hdsDebug} {
+#       puts $msg
+#    }
+# }
+# set normVars {HDS_PROJECT_DIR HDS_TEAM_HOME HDS_HOME XILINX_VIVADO}
+# foreach varName $normVars {
+#    if {[info exists ::env($varName)]} {
+#       set ::env($varName) [file normalize [subst -nobackslash {$::env($varName)}]]
+#    }
+# }
+# puts "## HDS #Running Vivado Project Creation/Update#"
+## HDS #Running Vivado Project Creation/Update#
+# set ::errorCount 0
+# if {[catch {source ./HDS_Scripts/top_csy_core_Create.tcl} errMsg]} {
+#    if {[regexp "(?q)$errMsg" $errorInfo]} {
+#       puts "Error: $errorInfo"
+#    } else {
+#       puts "Error: $errMsg"
+#    }
+#    return
+# }
+Opening project ./top_csy_core.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECM_DCD/username/ip_repo'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/ECM_DCD/username/ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/ECM_DCD/username/ip_repo/csy_lib/vivado/top_csy_core'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+## get_filesets
+## get_property DEFAULT_LIB [current_project]
+## current_project
+## current_project
+## current_project
+## current_project
+Project HDL files to add stored in:
+   ./HDS_Scripts/top_csy_core_fileList.tcl
+## list
+## list
+## list
+## join $vivadoCoresExtList "|"
+## get_files -all -quiet
+## join $nonIpFiles \n
+## join $ipFiles \n
+## join $coreIpFiles \n
+### list
+### list
+### list
+# if {$::errorCount == 0} {
+#    puts "Note: \"source ./HDS_Scripts/top_csy_core_Create.tcl\" completed successfully\n"
+# } else {
+#    puts "Error: \"source ./HDS_Scripts/top_csy_core_Create.tcl\" completed with errors\n"
+# }
+Note: "source ./HDS_Scripts/top_csy_core_Create.tcl" completed successfully
+
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir d:/ecm_dcd/username/ip_repo -vendor fh-joanneum.local -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-5107] Inferred bus interface 'user_i2c' of definition 'fh-joanneum.local:user:i2c:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'user_i2s' of definition 'fh-joanneum.local:user:i2s:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'user_sbus' of definition 'fh-joanneum.local:user:sbus:1.0' (from User Repositories).
+WARNING: [IP_Flow 19-4747] Not inferring AXIMM interface 'sbus' due to missing slave read-channel signals ARADDR ARVALID ARREADY RVALID RREADY.
+WARNING: [IP_Flow 19-4747] Not inferring AXIMM interface 'sbus_mst' due to missing master read-channel signals ARADDR ARVALID ARREADY RVALID RREADY.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'reset' as interface 'reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+set_property display_name csy_core_v1_0 [ipx::current_core]
+set_property description csy_core_v1_0 [ipx::current_core]
+set_property display_name csy_core [ipx::current_core]
+set_property description csy_core [ipx::current_core]
+set_property name csy_core [ipx::current_core]
+set_property name codec_i2c [ipx::get_bus_interfaces user_i2c -of_objects [ipx::current_core]]
+set_property name codec_i2s [ipx::get_bus_interfaces user_i2s -of_objects [ipx::current_core]]
+set_property name sbus_slv [ipx::get_bus_interfaces user_sbus -of_objects [ipx::current_core]]
+ipx::remove_bus_interface reset [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+ipx::infer_bus_interface irq_o xilinx.com:signal:interrupt_rtl:1.0 [ipx::current_core]
+INFO: [IP_Flow 19-4753] Inferred signal 'interrupt' from port 'irq_o' as interface 'irq_o'.
+INFO: [IP_Flow 19-4728] Bus Interface 'irq_o': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+ipx::infer_bus_interface {sbus_ack_mst sbus_rdata_mst sbus_addr_mst sbus_be_mst sbus_rd_mst sbus_wdata_mst sbus_we_mst} fh-joanneum.local:user:sbus_rtl:1.0 [ipx::current_core]
+set_property name sbus_mst [ipx::get_bus_interfaces sbus_1 -of_objects [ipx::current_core]]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "C_CORE_CLK_FREQUENCY" -component [ipx::current_core] ]
+set_property value 100000000 [ipx::get_user_parameters C_CORE_CLK_FREQUENCY -of_objects [ipx::current_core]]
+set_property value 100000000 [ipx::get_hdl_parameters C_CORE_CLK_FREQUENCY -of_objects [ipx::current_core]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/ECM_DCD/username/ip_repo
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'fh-joanneum.local:user:ads7883:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'fh-joanneum.local:user:ads7883_rtl:1.0' found within IP repository 'd:/ECM_DCD/username/ip_repo'.
+File in use: d:/ECM_DCD/username/ip_repo/Interfaces/ads7883_rtl.xml
+File ignored: d:/ECM_DCD/username/ip_repo/proj_audio_gan/vivado/vivado/ip_repo/ads7883_rtl.xml
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/ECM_DCD/username/ip_repo'
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 23 23:17:45 2018...
